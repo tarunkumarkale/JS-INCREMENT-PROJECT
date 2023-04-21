@@ -1,0 +1,45 @@
+.disp{
+    margin-top: 8vw;
+    margin-left: 19vw;
+    
+}
+i  {
+    color:green;
+    font-size: 17em !important;
+  }
+  .project{
+      font-size: 6vw;
+      color: red;
+      padding-left: 180px;
+      text-transform: capitalize;
+  }
+  .projet{
+      font-size: 2vw;
+      color: red;
+      padding-left: 200px;
+      text-transform: uppercase;
+  }
+  .projett{
+      font-size: 2vw;
+      color: red;
+      padding-left: 150px;
+      text-transform: uppercase;
+  }
+  .projetth{
+      font-size: 2vw;
+      color: red;
+      padding-left: 50px;
+      text-transform: uppercase;
+  }
+  .projecttwo{
+      font-size: 6vw;
+      color: red;
+      padding-left: 180px;
+      text-transform: capitalize;
+  }
+  .projectthree{
+      font-size: 6vw;
+      color: red;
+      padding-left: 180px;
+      text-transform: capitalize;
+  }

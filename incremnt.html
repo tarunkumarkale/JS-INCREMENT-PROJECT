@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="incremnt.css">
+
+    <title>Document</title>
+</head>
+<body style="background-color: darkkhaki;">
+   <div class="disp">
+    <i class="fa fa-coffee" style="font-size:48px;color:red"></i>
+
+    <i class="fas fa-mug-hot fa-4x "    aria-hidden="true"></i>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    
+    
+    <i class="fa fa-user"   aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <i class="fa fa-bars"  aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+</div> 
+<div style="margin-left: 200px;">
+    <p><span id="projectcompleted" class="project">HELLO</span> <span  class="projecttwo" id="projecttwo"></span> <span class="projectthree" id="projectthree">kale</span></p>
+   
+</div>
+<div>
+    <span class="projet">project completed</span> <span class="projett"> our happy client</span> <span  class="projetth"> project ongoing </span>
+</div>
+
+<script>
+ 
+  let count;
+
+  const automatic = () => {
+    count = 0;
+    let projectcompleted = document.getElementById("projectcompleted");
+    let set = setInterval(() => {
+      count = count + 20;
+      projectcompleted.innerHTML = count;
+      if (count == 200) {
+        clearInterval(set);
+      }
+    }, 100);
+  };
+
+  automatic();
+
+  let counttwo;
+  
+
+  const automat = () => {
+    counttwo = 0;
+    let projecttwo = document.getElementById("projecttwo");
+    let settwo = setInterval(() => {
+      counttwo = counttwo + 20;
+      projecttwo.innerHTML = counttwo;
+      if (counttwo == 200) {
+        clearInterval(settwo);
+      }
+    }, 100);
+
+  
+  };
+
+
+  automat();
+
+  let auto=()=>{
+  let countthree;
+  countthree = 0;
+  let projectthree = document.getElementById("projectthree");
+  let setthree = setInterval(() => {
+    countthree = countthree + 15;
+    projectthree.innerHTML = countthree;
+    if (countthree >= 320) { // Modified condition to use greater than or equal to
+      clearInterval(setthree);
+    }
+  }, 100);
+}
+auto();
+
+
+
+</script>
+
+
+
+    
+</body>
+</html>
